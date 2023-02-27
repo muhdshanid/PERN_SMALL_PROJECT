@@ -28,6 +28,7 @@ align-items: center;
 export const SignupButton = styled.button`
         appearance:none;
         --moz-appearance:none;
+        font-family: "Monsterrat", sans-serif;
         --webkit-appearance:none;
         font-size: 1.3rem;
         border-radius: 5px;
@@ -55,6 +56,5 @@ export const SignupButton = styled.button`
         border: none;
         outline: none;
         }
-    
 `;
 export default Signup

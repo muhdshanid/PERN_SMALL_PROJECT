@@ -3,6 +3,8 @@ import StyledSignup ,{SignupButton} from '../styled/Signup.Styled'
 const Signup = () => {
   const onSubmit = (e) => {
     e.preventDefault()
+    const url = `${process.env.REACT_APP_SERVER_URL}/auth/google`
+    window.open(url,"_self")
   }
   return (
     <StyledSignup>
