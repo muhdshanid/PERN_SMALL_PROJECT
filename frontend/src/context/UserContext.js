@@ -8,7 +8,6 @@ export const UserProvider = ({ children }) => {
   useEffect(()=>{
     fetch(`${process.env.REACT_APP_SERVER_URL}/account`,{credentials:"include"}).then(res => res.json())
     .then(data => {
-      console.log(data);
       setUser({...data})
     })
   },[])

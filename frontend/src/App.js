@@ -2,10 +2,11 @@ import StyledApp from './components/styled/App.Styled'
 import GlobalStyle from './components/styled/GlobalStyles'
 import { ThemeProvider } from 'styled-components';
 import { darkTheme } from './themes';
-import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import {BrowserRouter} from 'react-router-dom'
 import Signup from './components/auth/Signup';
 import { useContext } from 'react';
 import { UserContext } from './context/UserContext';
+import Home from './components/home/Home';
 function App() {
   const {user} = useContext(UserContext)
   return (
@@ -16,7 +17,7 @@ function App() {
       {
         user.loggedIn === null ? "" : 
         user.loggedIn === true ?
-        "Logged In"
+        <Home/>
         : <Signup/>
       }
     </StyledApp>

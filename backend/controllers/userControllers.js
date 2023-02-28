@@ -4,5 +4,5 @@ export const loginSuccess = (req,res) => {
        ...req.user,
        loggedIn:true
     }
-    res.json(user)
+    return res.json(user)
 }

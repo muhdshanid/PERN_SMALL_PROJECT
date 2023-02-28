@@ -1,4 +1,6 @@
 export const isAuth = (req,res,next) => {
-    if(req.user) next();
-    res.json({loggedIn:false})
+    if(req.user) next()
+    else{
+        return  res.json({loggedIn:false})
+    }
 }

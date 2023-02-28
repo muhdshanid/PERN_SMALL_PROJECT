@@ -11,6 +11,6 @@ CREATE TABLE posts (
      author_id INT REFERENCES users(id) NOT NULL
 );
 
-SELECT * FROM users;
+SELECT * FROM posts;
 
 DROP TABLE users;
